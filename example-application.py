@@ -6,7 +6,7 @@ from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 try:
     PORT_NUMBER = int(os.environ['PORT_NUMBER'])
 except:
-    PORT_NUMBER = 8080;
+    PORT_NUMBER = 80;
 
 class demoHandler(BaseHTTPRequestHandler):
     def do_GET(self):
